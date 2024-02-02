@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Element in Array</title>
+    <script>
+      //   let data = [10, 25, 18, 25, 36, 49, 75, 29, 43];
+      //   let item = 36;
+      //   let index = undefined;
+      //   for (let i = 0; i < data.length; i++) {
+      //     if (data[i] === item) {
+      //       index = i;
+      //       break;
+      //     }
+      //   }
+      //   console.log(index);
+      //   console.log(data.indexOf(item));
+
+      const searchElement = () => {
+        let data = [10, 25, 18, 25, 36, 49, 75, 29, 43];
+        let item = document.getElementById("search").value;
+        item = parseInt(item);
+        let index = undefined;
+        for (let i = 0; i < data.length; i++) {
+          if (data[i] === item) {
+            index = i;
+            break;
+          }
+        }
+        console.log(index);
+      };
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter value" id="search" />
+    <button onclick="searchElement()">Search Element</button>
+  </body>
+</html>
