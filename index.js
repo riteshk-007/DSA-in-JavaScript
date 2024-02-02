@@ -1,0 +1,8 @@
+/* opreation of Data structure 
+    Travertion 
+    Insertion
+    Deletion
+    Search
+    sorting
+    merging
+*/
