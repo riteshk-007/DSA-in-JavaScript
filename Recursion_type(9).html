@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indirect Recursion Type</title>
+    <script>
+      let money = 100;
+      let totalApple = 0;
+
+      function buyApple(x) {
+        // console.warn(x);
+        if (x > 0) {
+          console.warn("I have money", x, "and total apple", totalApple);
+          buyMore(x);
+        } else {
+          // console.warn("", totalApple);
+          console.log("I have total apple", totalApple, "and money", x);
+        }
+      }
+      function buyMore(x) {
+        // console.warn("buy more ", x);
+        totalApple++;
+        buyApple(x - 5);
+      }
+      buyApple(money);
+    </script>
+  </head>
+  <body>
+    <h1>Indirect Recursion Type</h1>
+  </body>
+</html>
