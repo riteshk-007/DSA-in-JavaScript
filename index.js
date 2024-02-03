@@ -13,7 +13,6 @@
         Bubble sort
         Bubble sortRecursion Data Structure
         Direct Recursion Data Structure in JavaScript
-
-
+         Head and Tail Recursion
 
 */

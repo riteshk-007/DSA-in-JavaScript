@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Head and Tail Recursion</title>
+    <script>
+      //   function colors() {
+      //     let data = 20;
+      //     console.warn(data);
+      //   }
+      //   function days() {
+      //     colors();
+      //   }
+      //   function fruits() {
+      //     days();
+      //   }
+      //   function topFuction() {
+      //     fruits();
+      //   }
+      //   topFuction();
+
+      // head recursion
+      function test(x) {
+        console.warn(x);
+        if (x > 0) {
+          test(x - 1);
+        }
+        // console.log(x);
+      }
+      test(3);
+
+      // tail recursion
+      function test2(x) {
+        // console.warn(x);
+        if (x > 0) {
+          test2(x - 1);
+        }
+        console.log(x);
+      }
+      test2(3);
+    </script>
+  </head>
+  <body>
+    <h1>Head and Tail Recursion</h1>
+  </body>
+</html>
