@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linear Search</title>
+    <script>
+      let data = [30, 10, 5, 14, 36, 58, 21, 9, 0];
+      let find = 5;
+      let pos = undefined;
+      for (let i = 0; i <= data.length; i++) {
+        if (data[i] == find) {
+          pos = i;
+          break;
+        }
+      }
+      console.warn(pos);
+      if (!pos) {
+        alert("element not found");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Linear Search</h1>
+  </body>
+</html>
