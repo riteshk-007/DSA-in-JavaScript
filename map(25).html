@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map Data Structure in JavaScript</title>
+    <script>
+      let data = new Map([
+        ["name", "Ritesh"],
+        [true, "bool Key"],
+        [100, "number"],
+      ]);
+      data.set("color", "green");
+      //   console.warn(data.size);
+      //   console.warn(data.has(100));
+      //   console.warn(data.get(100));
+
+      //   data.clear();
+
+      //   console.warn(data);
+
+      //   for (x of data) {
+      //     console.warn(x[0]);
+      //   }
+
+      data.forEach((val, key) => {
+        console.warn(key);
+        console.warn(val);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Map Data Structure in JavaScript</h1>
+  </body>
+</html>
