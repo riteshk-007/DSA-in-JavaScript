@@ -3,6 +3,7 @@
   <head>
     <title>Linked List in JavaScript</title>
     <script>
+      // class base
       class List {
         constructor(data) {
           this.head = {
@@ -29,6 +30,30 @@
       list.appendNode(500);
       list.appendNode(600);
       console.warn(list);
+
+      // function base
+
+      //       function createNode(value) {
+      //   return { value: value, next: null };
+      // }
+
+      // function createList(value) {
+      //   return { head: createNode(value), tail: this.head, size: 1 };
+      // }
+
+      // function appendNode(list, value) {
+      //   const node = createNode(value);
+      //   list.tail.next = node;
+      //   list.tail = node;
+      //   list.size += 1;
+      // }
+
+      // let list = createList(200);
+      // appendNode(list, 300);
+      // appendNode(list, 400);
+      // appendNode(list, 500);
+      // appendNode(list, 600);
+      // console.warn(list);
     </script>
   </head>
   <body>
