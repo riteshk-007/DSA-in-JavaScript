@@ -51,6 +51,27 @@
             return this.search(root.right, value);
           }
         }
+        preOrder(root) {
+          if (root) {
+            console.warn(root.value);
+            this.preOrder(root.left);
+            this.preOrder(root.right);
+          }
+        }
+        InOrder(root) {
+          if (root) {
+            this.InOrder(root.left);
+            console.warn(root.value);
+            this.InOrder(root.right);
+          }
+        }
+        postOrder(root) {
+          if (root) {
+            this.postOrder(root.left);
+            this.postOrder(root.right);
+            console.warn(root.value);
+          }
+        }
       }
       let bst = new BSTree();
       // console.warn(bst.isTreeEmpty());
@@ -61,8 +82,15 @@
       bst.makeTree(40);
       bst.makeTree(23);
 
-      console.warn(bst.search(bst.root, 45));
-      console.warn(bst.root);
+      // bst.preOrder(bst.root);
+
+      // bst.InOrder(bst.root);
+
+      // console.warn(bst.search(bst.root, 45));
+
+      bst.postOrder(bst.root);
+
+      // console.warn(bst.root);
     </script>
   </head>
   <body>
